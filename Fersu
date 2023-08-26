@@ -1,0 +1,39 @@
+- 👋 Hi, I’m @Fresh-tech-pixel
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 Ho
+Fresh-tech-pixel/Fresh-tech-pixel is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+<butten/like>
+<host server>
+protected void func_71190_q() {
++   public void func_71190_q() {
+       super.func_71190_q();
+       this.func_71333_ah();
+    }
+diff -r -U 3 minecraft_server\net\minecraft\src\TcpMasterThread.java minecraft_server_patched\net\minecraft\src\TcpMasterThread.java
+--- minecraft_server\net\minecraft\src\TcpMasterThread.java	Sat Jan 12 02:19:08 2013
++++ minecraft_server_patched\net\minecraft\src\TcpMasterThread.java	Sat Jan 12 02:24:29 2013
+@@ -11,6 +11,7 @@
+       this.field_74504_a = p_i3285_1_;
+    }
+ 
++   @SuppressWarnings("deprecation")
+    public void run() {
+       try {
+          Thread.sleep(5000L);
+diff -r -U 3 minecraft_server\net\minecraft\src\ThreadedFileIOBase.java minecraft_server_patched\net\minecraft\src\ThreadedFileIOBase.java
+--- minecraft_server\net\minecraft\src\ThreadedFileIOBase.java	Sat Jan 12 02:19:08 2013
++++ minecraft_server_patched\net\minecraft\src\ThreadedFileIOBase.java	Sat Jan 12 02:24:29 2013
+@@ -20,7 +20,8 @@
+    }
+ 
+    public void run() {
+-      this.func_75736_b();
++      while(true)
++         this.func_75736_b();
+<white desk>
+<void coler desk>
+      
